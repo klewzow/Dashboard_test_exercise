@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" xml:lang="ru-ru" lang="ru-ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/iconFonts.css">
+    <title>Gulp</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <page class="page__progect">
+    <div class="page__container progect">
+
+        <nav class="progect__menu navigation">
+
+
+            <div class="navigation__item  _size">
+                <div class="navigation__item-logo"><span><img src="../img/setting.svg" alt=""></span>Dashboard</div>
+                <div class="navigation__item-link">
+                    <a href="index.html" th:href="@{/}" class="icon-square">Dashboard</a>
+                    <a href="#" class="icon-square"> Product<span class="icon-cheveron-right"></span></a>
+                    <a href="#" class="icon-user"> Customers<span class="icon-cheveron-right"></span></a>
+                    <a href="#" class="icon-square"> Income<span class="icon-cheveron-right"></span></a>
+                    <a href="#" class="icon-discount"> Promote<span class="icon-cheveron-right"></span></a>
+                    <a href="#" class="icon-question"> Help<span class="icon-cheveron-right"></span></a>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="progect__dashboard">
+            <div class="progect__dashboard-container">
+                <div class="dashboard__header  header">
+                    <h2>Hello Evano 👋🏼,</h2>
+                </div>
+
+
+                <div class="dashboard__table  table">
+                    <div class="table__box">
+                        <div class="table__info">
+                            <h2>All Customers</h2>
+                            <a href="#">Active Members</a>
+                        </div>
+                        <div class="table__seach">
+                            <form action="#" class="seach_form">
+
+
+                                <input type="text" class="table__seach-input">
+                            </form>
+                        </div>
+
+
+                        <div class="table__workzone">
+
+                            <div class="table__workzone-item">
+                                <div class="table__workzone-crew">Customer Name</div>
+                                <div class="table__workzone-crew _br4">Company</div>
+                                <div class="table__workzone-crew _br3">Phone Number</div>
+                                <div class="table__workzone-crew _br2">Email</div>
+                                <div class="table__workzone-crew _br1">Country</div>
+                                <div class="table__workzone-crew">Status</div>
+                            </div>
+
+                            <div class="table__workzone-item">
+                                <div class="table__workzone-crew"> Jane Cooper</div>
+                                <div class="table__workzone-crew _br4">Microsoft</div>
+                                <div class="table__workzone-crew _br3">(225) 555-0118</div>
+                                <div class="table__workzone-crew _br2">jane@microsoft.com</div>
+                                <div class="table__workzone-crew _br1">United States </div>
+                                <div class="table__workzone-crew"><button class="_btn _inactive">Inactive</button></div>
+                            </div>
+
+                            <div class="table__workzone-item">
+                                <div class="table__workzone-crew">Floyd Miles</div>
+                                <div class="table__workzone-crew _br4">Yahoo</div>
+                                <div class="table__workzone-crew _br3">(205) 555-0100</div>
+                                <div class="table__workzone-crew _br2">floyd@yahoo.com </div>
+                                <div class="table__workzone-crew _br1"> Kiribati</div>
+                                <div class="table__workzone-crew"><button class="_btn">Active</button></div>
+                            </div>
+
+                            <div class="table__workzone-item">
+                                <div class="table__workzone-crew">Ronald Richardss</div>
+                                <div class="table__workzone-crew _br4">Adobe</div>
+                                <div class="table__workzone-crew _br3">(302) 555-0107</div>
+                                <div class="table__workzone-crew _br2">ronald@adobe.com </div>
+                                <div class="table__workzone-crew _br1">Israel</div>
+                                <div class="table__workzone-crew"><button class="_btn">Active</button></div>
+                            </div>
+
+                            <div class="table__workzone-item">
+                                <div class="table__workzone-crew">Marvin McKinney</div>
+                                <div class="table__workzone-crew _br4">Tesla</div>
+                                <div class="table__workzone-crew _br3">(252) 555-0126</div>
+                                <div class="table__workzone-crew _br2">marvin@tesla.com </div>
+                                <div class="table__workzone-crew _br1">Iran</div>
+                                <div class="table__workzone-crew"><button class="_btn">Active</button></div>
+                            </div>
+
+                            <div class="table__workzone-item">
+                                <div class="table__workzone-crew">Jerome Bell</div>
+                                <div class="table__workzone-crew _br4">Google</div>
+                                <div class="table__workzone-crew _br3">(252) 555-0126</div>
+                                <div class="table__workzone-crew _br2">marvin@tesla.com </div>
+                                <div class="table__workzone-crew _br1">Curaçao</div>
+                                <div class="table__workzone-crew"><button class="_btn">Active</button></div>
+                            </div>
+
+                            <div class="table__workzone-item">
+                                <div class="table__workzone-crew">Kathryn Murphy</div>
+                                <div class="table__workzone-crew _br4">Microsoft</div>
+                                <div class="table__workzone-crew _br3">(406) 555-0120</div>
+                                <div class="table__workzone-crew _br2">kathryn@microsoft.com</div>
+                                <div class="table__workzone-crew _br1">Curaçao</div>
+                                <div class="table__workzone-crew"><button class="_btn">Active</button></div>
+                            </div>
+
+                            <div class="table__workzone-item">
+                                <div class="table__workzone-crew">Jacob Jones</div>
+                                <div class="table__workzone-crew _br4">Yahoo</div>
+                                <div class="table__workzone-crew _br3">(208) 555-0112</div>
+                                <div class="table__workzone-crew _br2">jacob@yahoo.com</div>
+                                <div class="table__workzone-crew _br1">Brazil</div>
+                                <div class="table__workzone-crew"><button class="_btn">Active</button></div>
+                            </div>
+
+                            <div class="table__workzone-item">
+                                <div class="table__workzone-crew">Kristin Watson</div>
+                                <div class="table__workzone-crew _br4">Facebook</div>
+                                <div class="table__workzone-crew _br3">(704) 555-0127</div>
+                                <div class="table__workzone-crew _br2">kristin@facebook.com</div>
+                                <div class="table__workzone-crew _br1">Åland Islands</div>
+                                <div class="table__workzone-crew"><button class="_btn _inactive">Inactive</button></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard__footer  footer">
+                        <div class=" footer__showing">Showing data 1 to 8 of 256K entries</div>
+                        <div class=" footer__nav">
+                            <button class="footer__navigation icon-cheveron-left"></button>
+                            <button class="footer__navigation _nav_active">1</button>
+                            <button class="footer__navigation">2</button>
+                            <button class="footer__navigation">3</button>
+                            <button class="footer__navigation">4</button>
+                            <button class="footer__navigation">...</button>
+                            <button class="footer__navigation">40</button>
+                            <button class="footer__navigation icon-cheveron-right"></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</page>
+
+    </div>
+
+</body>
+<script src="js/script.js"></script>
+</html>
