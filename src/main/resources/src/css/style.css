@@ -506,7 +506,7 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 100%;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 [class*=__container] {
