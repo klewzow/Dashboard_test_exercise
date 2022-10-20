@@ -39,17 +39,17 @@ public class SaxParser extends DefaultHandler {
 
     @Override
     public void endElement(String uri, String localName, String qName) throws SAXException {
-        this.status = "";
-        if(check == 5000){
-            return;
-        }
-        if(qName.equals("foreign_names") && element.getName() != null ) {
-            elements.add(element);
-            element = new Element();
-        }
-        check+=1;
-
-    }
+//        this.status = "";
+//        if(check == 5000){
+//            return;
+//        }
+//        if(qName.equals("foreign_names") && element.getName() != null ) {
+//            elements.add(element);
+//            element = new Element();
+//        }
+//        check+=1;
+//
+//    }
 
     @Override
     public void characters(char[] ch, int start, int length) throws SAXException {
