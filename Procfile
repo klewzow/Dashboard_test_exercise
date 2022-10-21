@@ -1,1 +1,1 @@
-web: java   $JAVA_OPTS -jar \out\artifacts\JobProject_jar\JobProject.jar
+web: java   $JAVA_OPTS -jar target/JobProject-0.0.1-SNAPSHOT.jar

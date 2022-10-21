@@ -9,10 +9,6 @@ import org.thymeleaf.spring5.SpringTemplateEngine;
 import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 import org.thymeleaf.templatemode.TemplateMode;
-import org.xml.sax.SAXException;
-
-import javax.xml.parsers.ParserConfigurationException;
-
 
 @Configuration
 @ComponentScan("com.gmail.klewzow")
@@ -20,13 +16,10 @@ import javax.xml.parsers.ParserConfigurationException;
 @EnableWebMvc
 public class ThymeleafConfiguration implements  WebMvcConfigurer {
 
-
         private final ApplicationContext applicationContext;
-        public ThymeleafConfiguration(ApplicationContext applicationContext) throws ParserConfigurationException, SAXException {
+        public ThymeleafConfiguration(ApplicationContext applicationContext)  {
             this.applicationContext = applicationContext;
         }
-
-
 
     /* ******************************************************************* */
         /* GENERAL CONFIGURATION ARTIFACTS */
