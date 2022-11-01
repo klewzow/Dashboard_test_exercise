@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -21,7 +21,7 @@
             <div class="navigation__item  _size">
                 <div class="navigation__item-logo"><span><img src="../img/setting.svg" alt=""></span>Dashboard</div>
                 <div class="navigation__item-link">
-                    <a href="index.html" class="icon-square">Dashboard</a>
+                    <a href="index.html" th:href="index" class="icon-square">Dashboard</a>
                     <a href="#" class="icon-square"> Product<span class="icon-cheveron-right"></span></a>
                     <a href="#" class="icon-user"> Customers<span class="icon-cheveron-right"></span></a>
                     <a href="#" class="icon-square"> Income<span class="icon-cheveron-right"></span></a>
@@ -142,13 +142,12 @@
                     <div class="dashboard__footer  footer">
                         <div class=" footer__showing">Showing data 1 to 8 of 256K entries</div>
                         <div class=" footer__nav">
-                            <button class="footer__navigation icon-cheveron-left"></button>
-                            <button class="footer__navigation _nav_active">1</button>
-                            <button class="footer__navigation">2</button>
-                            <button class="footer__navigation">3</button>
-                            <button class="footer__navigation">4</button>
-                            <button class="footer__navigation">...</button>
-                            <button class="footer__navigation">40</button>
+                            <button class="footer__navigation icon-cheveron-left"> </button>
+
+                            <button th:each="btn : ${btn}" class="footer__navigation" th:class="footer__navigation"
+                                th:classappend="${btn.isActive} ? _nav_active : footer__navigation "
+                                th:text="${btn.getpNumb}">#</button>
+
                             <button class="footer__navigation icon-cheveron-right"></button>
                         </div>
                     </div>
